@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin: 0;
+    background: white;
+    font-family: 'poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5cbbed;
+    height: 80px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 60px;
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-weight:normal;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    
+}
+
+.box-img{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 600px;
+   
+}
+
+.box-txt{
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+    height: 600px;
+    
+}
+
+.box-txt span {
+    color: gray;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.box-txt h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 60px;
+    color: #0185cc;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+.box-txt p{
+    color: gray;
+    margin-bottom: 30px;
+}
+.btn-hero{
+    background: #0185cc;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-hero:hover{
+    background: #015c8d;
+    font-size: 18px;
+}
+
+.especialidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    height: 650px;
+}
+.box-item{
+    width: 30%;
+    height: 400px;
+    background: #9ed3f0;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.n-top{
+    margin-top: 30px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: #5cbbed;
+    height: 150px;
+    color: white;
+    font-size: 20px;
+
+
+}
+
+.whats {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+    }
+
+    .box-img {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box-txt {
+        width: 90%;
+        text-align: center;
+    }
+
+    .box-txt h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .especialidade {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .box-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .box-txt h2 {
+        font-size: 28px;
+    }
+
+    .btn-hero {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px 20px;
+    background: #9ed3f0;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    font-size: 40px;
+    color: #0185cc;
+    font-family: "DM Serif Display", serif;
+}
+
+.formulario label {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    display: block;
+    margin-top: 15px;
+}
+
+.formulario input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.formulario button {
+    background: #0185cc;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-top: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #015c8d;
+    font-size: 18px;
+}

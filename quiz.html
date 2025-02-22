@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz para Crianças Autistas</title>
+    <link rel="stylesheet" href="quizz.css"> <!-- CSS do quiz -->
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-box">
+            <h1 class="titulo-quiz">Quiz do Autista</h1>
+            <p>Escolha a resposta que mais combina com você!</p>
+            <div id="pergunta-container" class="pergunta-container">
+                <p id="pergunta">Qual atividade você mais gosta?</p>
+                <div class="alternativas">
+                    <button class="alternativa" onclick="selecionarResposta(1)">Desenhar</button>
+                    <button class="alternativa" onclick="selecionarResposta(2)">Brincar ao ar livre</button>
+                    <button class="alternativa" onclick="selecionarResposta(3)">Jogar VideoGame</button>
+                </div>
+                <button id="proxima" onclick="proximaPergunta()" class="botao" disabled>Próxima</button>
+            </div>
+        </div>
+    </div>
+    <div id="mensagem-final" style="display: none;">
+        <p>Você fez um ótimo trabalho! <br>Cada resposta revela como você é incrivel<br> em entender a si mesmo e ao undo ao seu redor.</p>
+    </div>
+    <script src="gif.js"></script>
+</body>
+</html>
